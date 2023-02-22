@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Joecording Soundboard</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 10px;
+			cursor: pointer;
+		}
+.button2 {
+			background-color: #FF0000;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 10px;
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Joecording Soundboard</h1>
+	<div class="container">
+		<button class="button" onclick="playSound('audio1')">Happy</button>
+		<button class="button" onclick="playSound('audio2')">Holy Shit</button>
+		<button class="button" onclick="playSound('audio3')">The Dumbest Thing</button>
+		<button class="button" onclick="playSound('audio4')">Good Morning</button>
+		<button class="button" onclick="playSound('audio5')">Millions and Millions</button>
+		<button class="button" onclick="playSound('audio6')">Shady</button>
+		<button class="button" onclick="playSound('audio7')">Happily Married</button>
+		<button class="button" onclick="playSound('audio9')">Crackwhore</button>
+		<button class="button" onclick="playSound('audio10')">Fucked Upness</button>
+		<button class="button" onclick="playSound('audio11')">Jay</button>
+		<button class="button" onclick="playSound('audio12')">Only One Way</button>
+		<button class="button" onclick="playSound('audio13')">Meathead</button>
+		<button class="button2" onclick="playSound('audio8')">Joey D Radio</button>
+
+	</div>
+
+	<audio id="audio1" src="joeyD1 (3).mp3"></audio>
+	<audio id="audio2" src="HolyShit.mp3"></audio>
+	<audio id="audio3" src="Thedumbestthing.mp3"></audio>
+	<audio id="audio4" src="Its joe.mp3"></audio>
+	<audio id="audio5" src="Millions.mp3"></audio>
+	<audio id="audio6" src="Shady.mp3"></audio>
+	<audio id="audio7" src="Happy Marriage.mp3"></audio>
+	<audio id="audio8" src="JoeyDep.mp3"></audio>
+	<audio id="audio9" src="CrackwhoreSample.mp3"></audio>
+	<audio id="audio10" src="FuckedupnessSample.mp3"></audio>
+	<audio id="audio11" src="JayRecordItSample.mp3"></audio>
+	<audio id="audio12" src="OnlyOneMFWayToFindOutSample.mp3"></audio>
+	<audio id="audio13" src="MeatheadSample.mp3"></audio>
+
+
+	<script>
+		function playSound(id) {
+			var audio = document.getElementById(id);
+			audio.currentTime = 0;
+			audio.play();
+		}
+	</script>
+<img src="joeygif.gif" alt="Joey D GIF" style="display: block; margin: auto;"/>
+
+</body>
+</html>
